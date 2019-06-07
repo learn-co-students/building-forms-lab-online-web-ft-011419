@@ -5,11 +5,11 @@ class BandInput extends Component {
   state={
     name:""
   }
- // console.log(state)
+
 onSubmit = (event) => {
   event.preventDefault()
   console.log(this.state,"submitted")
-    this.props.addBand(this.state)
+   this.props.addBand(this.state)
     this.setState({ name: '' })
   };
 
